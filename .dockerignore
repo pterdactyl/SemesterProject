@@ -1,0 +1,16 @@
+.vscode/
+.history/
+*.vsix
+*.rdb
+Configs/
+Certs/
+db.sqlite3
+venv/
+.idea/
+README.md
+docker-compose.yml
+Dockerfile
+.gitignore
+__pycache__
+SemesterProject/static/
+

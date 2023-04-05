@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /usr/src/app
 
+RUN python3 /usr/src/app/manage.py makemigrations
+RUN python3 /usr/src/app/manage.py migrate
+
 # For Django
 EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block heading_content %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"
+            crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="mb-3">
+        <form method="get" class="needs-validation g-3" novalidate>
+            {% csrf_token %}
+            <div class="row mb-3">
+                <div class="col-auto">
+                    <label for="start_time" class="form-label">Start Time</label>
+                    <input type="time" class="form-control" id="start_time" name="start_time" max="" required>
+                    <span class="valid-feedback"></span>
+                </div>
+                <div class="col-auto">
+                    <label for="end_time" class="form-label">End Time</label>
+                    <input type="time" class="form-control" id="end_time" name="end_time">
+                    <span class="valid-feedback"></span>
+                </div>
+                <div class="col-auto">
+                    <label for="date_day" class="form-label">Day</label>
+                    <input type="date" class="form-control" id="date_day" name="date_day">
+                    <span class="valid-feedback"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-auto">
+                    <button type="submit" class="button btn-primary mb-3">Submit</button>
+                </div>
+                <div class="col-auto">
+                    <button type="reset" class="button btn-danger mb-3" onclick="">Reset</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <hr/>
+    <div class="w-auto">
+        <canvas id="sineChart"></canvas>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+
+    <script type="text/javascript">
+        const date = new Date();
+        document.getElementById('start_time').value = (date.getHours() + ":" + (date.getMinutes() - 5));
+        document.getElementById('end_time').value = (date.getHours() + ":" + date.getMinutes());
+        document.getElementById('date_day').value = (date.getFullYear() + "-" + date.getMonth() + "-" + date.getDay());
+
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        const cts = document.getElementById('sineChart');
+        const data = {
+                labels: {{ data.labels|safe }},
+                datasets: [{
+
+                    label: "Noisy Signal",
+                    data: {{ data.values|safe }},
+                    fill: false,
+                    tension: 0.1
+                }],
+                options: {
+                    responsive: true,
+                    aspectRatio: 1,
+                    scales: {
+                        x: {
+                            max: 1000
+                        },
+                        y: {
+                            max: 1
+                        }
+                    }
+                }
+                ,
+            }
+        ;
+        const config = {
+            type: 'line',
+            data: data,
+        };
+        const chart = new Chart(cts, config);
+    </script>
+
+{% endblock %}
