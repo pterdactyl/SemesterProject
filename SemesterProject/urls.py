@@ -13,6 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+#  Copyright (c) 2023 - All rights reserved.
+#  Created by Peter Lin for PROCTECH 4IT3/SEP 6IT3.
+#
+#  SoA Notice: I Peter Lin, 400270145 certify that this material is my original work.
+#  I certify that no other person's work has been used without due acknowledgement.
+#  I have also not made my work available to anyone else without their due acknowledgement.
+
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -21,10 +28,12 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index.html'),
-    path("admin/", admin.site.urls),
-    path("dashboard/", include('dashboard.urls', namespace='dashboard')),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path("tabulation/", include('tabulation.urls', namespace='tabulation')),
-    path("accounts/", include('accounts.urls'))
-    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+                  path('', views.index, name='index'),
+                  path("admin/", admin.site.urls),
+                  path("dashboard/", include('dashboard.urls', namespace='dashboard')),
+                  path('accounts/', include('django.contrib.auth.urls')),
+                  path("tabulation/", include('tabulation.urls', namespace='tabulation')),
+                  path("accounts/", include('accounts.urls')),
+                  path("fourier/", include('fourier.urls')),
+                  path("api/", include('api.urls'))
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

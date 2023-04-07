@@ -1,73 +1,241 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block heading_content %}
     <link href="{% static 'css/custom.css' %}" rel="stylesheet" crossorigin="anonymous" type="text/css">
 {% endblock %}
+
+
 {% block content %}
-    <h1>Peter Lin</h1>
-    <hr/>
 
-    <a href="https://linkedin.com/in/ylpeterlin/">LinkedIn</a>
+    <head>
+        <img src="{% static 'images/Portrait.jpg' %}" height="182" width="147" style="float:left">
+        <h1><i><br>&nbsp&nbsp&nbsp&nbsp Peter Lin</i></h1>
+        <br>
 
-     </br></br>
-        <img src="{% static 'images/Portrait.jpg' %}" height="165" width="130px">
+    </head>
 
-            <div>
-                <h3>Education</h3>
-                <b>Bachelor of Technology, Automation Engineering Technology</b>
-                <p style="font-size:16px">McMaster University, Hamilton</p>
-                <ul>
-                    <li>
-                        Currently in level four of integrated 4.5-year engineering-management
-                        combined degree-diploma through McMaster University and Mohawk College
-                    </li>
-                    <li>
-                        The business-management curriculum has dual accreditation,
-                        globally with the Accreditation Council of Business Schools and Programs,
-                        nationally with the Canadian Institute of Management
-                    </li>
-                    <li>
-                        Will be awarded: Bachelor of Technology Degree,
-                        Chemical Engineering Technology Advanced Diploma,
-                        and Business Management Certificate
-                    </li>
-                </ul>
-            </div>
+    <body>
+    <div>
 
-            <div>
-                <h3>Work Experience</h3>
-                <b>Process Engineer Intern</b>
-                <p style="font-size:16px">Mobile Climate Control, Mississauga</p>
 
-            <ul>
-                <li>
-                    Assisted with the design, development, and optimization of manufacturing processes
-                </li>
-                <li>
-                    Participated in team meetings and contributed to the development of new ideas and approaches
-                </li>
-            </ul>
-            </div>
-            <div>
-            <ol>
-                <li>
+        <h2 style="clear:both">&nbsp Education</h2>
+        <hr>
+        <table style="width: 85%">
+            <thead>
+            <tr>
+                <td colspan=3 style="font-size:18px">
+                    <u>McMaster University</u>
+                </td>
+            </tr>
+            </thead>
+            <tr>
+                <td colspan="2">
+                    <b>Bachelor of Technology, <br>
+                        Automation Engineering Technology
+                    </b>
+                </td>
+                <td style="text-align:right">
+                    <b>Expected Completion, December 2023</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        <li>
+                            Achieved a cumulative grade point average of 3.2 on a 4.0 scale across
+                            all semesters
+                        </li>
+                        <li>
+                            Currently enrolled in Level 4 of an integrated 4.5-year joint program
+                            with <br>McMaster University and Mohawk College
+                        </li>
+                    </ul>
 
-                </li>
-            </ol>
-            </div>
+                </td>
+            </tr>
 
-                Contact Me:
-            <table border="1">
-                <tbody>
-                <tr><td>  <form>
-                    <input name="Contact me" type="radio" required>Contact me</input>
-                    <input type="text" id="name" name="name" required
-                           minlength="4" maxlengtht="8" size="10">
-                    <input type="checkbox" content="Send me an email">By Email?</input>
-                    <button type="submit">Submit</button><button type="reset">Reset</button>
+            <tr>
+                <td colspan="2" style="font-size: 18px">
+                    <br>
+                    <u>Bayview Secondary School</u>
+                </td>
+                <td style="text-align: right">
+                    <br>
+                    <b>2015 - 2019</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    - Graduated and received the Ontario Secondary School Diploma (OSSD)
+                </td>
+            </tr>
+
+
+        </table>
+
+        <br>
+        <h2>Work</h2>
+        <hr>
+        <table style="width: 85%">
+            <tr>
+                <td colspan="3" style="font-size: 18px">
+                    <b><i>Process Engineer Intern</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <u><a href="https://www.mcc-hvac.com/?cont=NA"> Mobile Climate Control, Mississauga</a></u>
+                </td>
+                <td colspan="1" style="text-align: right">
+                    <b>Jan 2022 – Aug 2022</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        <li>
+                            Conducted time studies on the process of product manufacturing which resulted in reduced time and increased efficiency
+                        </li>
+                        <li>
+                            Studied robot arms that reduce the cycle time of the process by 30%
+                        </li>
+                        <li>
+                            Participated in management meetings and contributed to the development of new ideas and approaches
+                        </li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size: 18px">
+                    <br>
+                    <b><i>IT Intern</i></b>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <u><a href="https://www.dmtserv.com"> DM&T Services Ltd., Richmond Hill, ON</a></u>
+                </td>
+                <td colspan="1" style="text-align: right">
+                    <b>Oct 2017 - Jan 2018</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        <li>
+                            Troubleshoot problems and help develop solutions
+                        </li>
+                        <li>
+                            Perform minor repairs to equipment and arrange for other servicing needs
+                        </li>
+                        <li>
+                            Identify and report system issues to vendors
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="font-size: 18px">
+                    <br>
+                    <b><i>Gym Attendant</i></b>
+                </td>
+                <td colspan="1" style="text-align: right">
+                    <b>May 2018 - Aug 2018</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <u><a href="https://www.fit4less.ca"> Fit4Less, Markham, ON</a></u>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        <li>
+                            Provide customer service though: interacting with patrons, assisting with spotting, educating participants on how to use equipment, and answering questions
+                        </li>
+                        <li>
+                            Ensure the fitness area remain clean and organized; organize dumbbells, weight plates, and bars
+                        </li>
+                        <li>
+                            Attend mandatory meetings and semester trainings
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <h2>Hobbies</h2>
+        <hr>
+        <u style="font-size: 18px">Hobbies</u><br>
+        One of my hobbies that I like to do in my free time is to exercise.
+        Exercising is any physical activity that is planned, structured, and</br> repetitive,
+        with the goal of improving or maintaining physical fitness, health, or overall well-being.
+        Some of my favourite exercises are:
+        <ol>
+            <li>
+                Lift Weights
+            </li>
+            <li>
+                Basketball
+            </li>
+            <li>
+                Soccer
+            </li>
+            <li>
+                Jog
+            </li>
+        </ol>
+        <br>
+        <u style="font-size: 18px">Interests</u><br>
+        Aside from my hobbies, I do have many things that I am interested in. One of the things I am interested in is
+        cooking. While I do like to</br> exercise,
+        I also like to make food. Here are some of my dishes to make in order:
+        <ol>
+            <li>
+                Garlic Butter Steak and Roasted Potatoes
+            </li>
+            <li>
+                Chicken Carbonara
+            </li>
+            <li>
+                Korean Beef Bulgogi
+            </li>
+        </ol>
+        <br>
+        <u style="font-size: 18px">Professional Associations</u><br>
+        I have no previous experience in with professional associations. I am interested in the
+        Robotics and Artificial Intelligence, so perhaps
+        I </br>could take part of the International Association for AI and Robotics in Service to Society in the future.
+
+        <br>
+        <br>
+        <u style="font-size: 18px">Clubs</u><br>
+        I have joined a couple of clubs during high school, but did not feel the need to join one in university.
+        I was in the athletic club and math </br>club because I really enjoyed math in high school.
+    </div>
+    </body>
+
+    <br>
+    Contact Me:
+    <table border="1">
+        <tbody>
+        <tr>
+            <td>
+                <form>
+                    <input name="ContactMe" type="radio" content="Contact Me" required>Contact Me</input>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                    By Email?</input>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </form>
-                </td></tr>
-                </tbody>
-            </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
 {% endblock %}

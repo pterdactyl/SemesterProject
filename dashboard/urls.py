@@ -4,14 +4,16 @@
 #  SoA Notice: I Peter Lin, 400270145 certify that this material is my original work.
 #  I certify that no other person's work has been used without due acknowledgement.
 #  I have also not made my work available to anyone else without their due acknowledgement.
+#
 
 from django.urls import path
 
-from. import views
+from . import views
 
 app_name = 'dashboard'
 urlpatterns = [
     path('', views.index, name='index'),
-    path("sinewave", views.sinewave, name='sinewave'),
+    path("sinewave/", views.sinewave, name='sinewave'),
+    path("heartbeat/", views.heartbeat, name='sinewave'),
 ]
 

@@ -9,13 +9,15 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-import os.path
-#  Copyright (c) 2023.
-#  Created by Jan Boer for SEPT 4IT3
-#  I Jan Boer, 0862551 certify that this material is my original work.
-#  No other person's work has been used without due acknowledgement. I have also not made my work available to anyone else without it being acknowledged.
+#  Copyright (c) 2023 - All rights reserved.
+#  Created by Peter Lin for PROCTECH 4IT3/SEP 6IT3.
 #
-#  This is my own work and I have not shared it with anyone. I have sourced and refenced all the external code and ensured that my work is referenced where required.
+#  SoA Notice: I Peter Lin, 400270145 certify that this material is my original work.
+#  I certify that no other person's work has been used without due acknowledgement.
+#  I have also not made my work available to anyone else without their due acknowledgement.
+
+import os.path
+
 
 from pathlib import Path
 
@@ -35,6 +37,10 @@ ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.learningdjango.tech', 'https://*.localhost.testing']
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_MASKED = True
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+SECURE_PROXY_SSL_HEADER = None
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,7 +52,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "dashboard.apps.DashboardConfig",
     "tabulation.apps.TabulationConfig",
-    "accounts.apps.AccountsConfig"
+    "accounts.apps.AccountsConfig",
+    "api.apps.ApiConfig",
+    'rest_framework',
+    'fourier.apps.FourierConfig'
 ]
 
 MIDDLEWARE = [
@@ -57,9 +66,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    # 'django.middleware.cache.UpdateCacheMiddleware',
-    # 'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.cache.FetchFromCacheMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = "SemesterProject.urls"
@@ -161,6 +170,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'images')
+MEDIA_URL = '/images/'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -173,4 +186,10 @@ MQTT_USER = ''
 MQTT_PASSWORD = ''
 MQTT_TOPICS = [
     'noise_gen/signal/sinewave',
+    'noise_gen/signal/heartbeat'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}

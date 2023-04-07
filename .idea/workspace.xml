@@ -4,58 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46812e6c-1529-40dd-915e-15526490b447" name="Changes" comment="Update Week6">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Copyright_Peter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL Scripts/SemesterProject.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SemesterProject/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/templates/dashboard/sinewave.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/inversion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/templates/tabulation/sinewave.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabulation/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/reset.html" afterDir="false" />
+    <list default="true" id="46812e6c-1529-40dd-915e-15526490b447" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/Certs/certificate.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Certs/certificate.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL Scripts/cleanup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL Scripts/limit_size.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SemesterProject/mqtt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0002_heartbeatdata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/templates/dashboard/heartbeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/templates/fourier/heartbeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/templates/fourier/sinewave.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fourier/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/profile_pictures/AOT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/user_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabulation/migrations/0002_delete_sinedata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabulation/templates/tabulation/heartbeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SemesterProject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SemesterProject/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SemesterProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SemesterProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SemesterProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SemesterProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Portrait.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Portrait.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SemesterProject/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SemesterProject/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Portrait.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Portrait.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabulation/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabulation/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabulation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabulation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabulation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabulation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabulation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabulation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +81,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -102,27 +114,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/unforgiven/PycharmProjects/SemesterProject/templates&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/unforgiven/PycharmProjects/SemesterProject/templates",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Certs" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.SemesterProject">
@@ -181,7 +196,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8085" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -191,15 +206,37 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment (1)" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Django Server.SemesterProject" />
       <item itemvalue="Django tests.Test: " />
       <item itemvalue="Django tests.Test: SemesterProject" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: SemesterProject" />
-        <item itemvalue="Django tests.Test: " />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment (1)" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Django tests.Test: SemesterProject" />
         <item itemvalue="Django tests.Test: " />
         <item itemvalue="Django tests.Test: SemesterProject" />
@@ -221,6 +258,8 @@
       <workItem from="1677122303869" duration="29000" />
       <workItem from="1677122567526" duration="69000" />
       <workItem from="1677184576374" duration="11060000" />
+      <workItem from="1680678911960" duration="2763000" />
+      <workItem from="1680681811777" duration="22365000" />
     </task>
     <task id="LOCAL-00001" summary="Update Week5">
       <created>1675880872826</created>
@@ -264,7 +303,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677122152019</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <created>1680667103080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680667103080</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update">
+      <created>1680667131985</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680667131985</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +355,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update Week5" />
     <MESSAGE value="Update Week6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Week6" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SemesterProject$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1677266691083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
