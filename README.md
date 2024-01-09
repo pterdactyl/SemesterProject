@@ -1,5 +1,8 @@
 # Semester Project
 
+# Description
+This web application displays a resume (some information may be fabricated data inserted solely for project purposes) as the main tab. Three other tabs contain wave generators and data display of the waves. 
+
 # Steps
 ## Signal Generator
 Signal Generator - requires
